@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <style>
+        body{
+            background-color: #efefef;
+        }
+        div{
+            width: 330px;
+            height: 450px;
+            background-color: white;
+            border-top: 40px groove red;
+            border-bottom: 40px ridge red;  
+            margin: 0 auto;
+            border-radius: 40px;
+            box-shadow: 0px 0px 10px #323232;
+        }
+        input[type=test]{
+        width: 90%;
+        height: 30px;
+        margin: 9px;
+        margin-right: 6px;
+        }
+
+        input[type=button]{
+          width: 70px;
+          height: 40px;
+          margin: 4px;
+        
+        }
+    </style>
+</head>
+<body>
+<div>
+ <form name="wap">
+    <input type="test" name="result">
+    <br><br>
+    <input type="button" value="1" onclick="document.wap.result.value+=1">
+    <input type="button" value="2" onclick="document.wap.result.value+=2">
+    <input type="button" value="3" onclick="document.wap.result.value+=3">
+    <input type="button" value="4" onclick="document.wap.result.value+=4">
+    <br>
+    <input type="button" value="5" onclick="document.wap.result.value+=5">
+    <input type="button" value="6" onclick="document.wap.result.value+=6">
+    <input type="button" value="7" onclick="document.wap.result.value+=7">
+    <input type="button" value="8" onclick="document.wap.result.value+=8">
+    <br><br>
+    <input type="button" value="9" onclick="document.wap.result.value+=9">
+    <input type="button" value="0" onclick="document.wap.result.value+=0">
+    <input type="button" value="." onclick="document.wap.result.value+='.'">
+    <input type="button" value="c" onclick="document.wap.result.value=''">  
+    <br><br>
+    <input type="button" value="+"  onclick="document.wap.result.value+='+'">
+    <input type="button" value="-"  onclick="document.wap.result.value+='-'">
+    <input type="button" value="*"  onclick="document.wap.result.value+='*'">
+    <input type="button" value="%"  onclick="document.wap.result.value+='/'">
+    <br><br>
+    <input type="button" value="=" style="width: 250px; height: 35px;  margin-left: 25px; border-radius: 1px;" onclick="document.wap.result.value=eval(document.wap.result.value)">   
+ 
+
+</form>
+</div>
+    
+</body>
+</html>
